@@ -19,10 +19,11 @@ function Logo() {
   return (
     <Link href="/">
       <a className="inline-flex justify-center items-center">
-        <span className="mr-2">
+      <span className="font-bold">AJ Kulundu</span>
+        <span className="mx-2">
           <Icon />
         </span>
-        <span className="font-bold">Contentlayer</span>
+        <span className="font-bold">Contentlayer </span>
       </a>
     </Link>
   )
