@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Contentlayer Next.js Example</title>
+        <title>Blog Website</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
       </Head>
 
