@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
+import PostMetrics from '../../components/PostMetrics';
 
 export async function getStaticPaths() {
   const paths: string[] = allPosts.map((post) => post.url);
@@ -33,6 +34,7 @@ const PostLayout = ({ post }: { post: Post }) => {
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </time>
           <h1>{post.title}</h1>
+          <PostMetrics slug={post._raw.flattenedPath}/>
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
       </article>
